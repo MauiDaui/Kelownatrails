@@ -14,7 +14,10 @@ pipeline{
          stage('Testing'){
             steps{
             	echo 'This is testing'
-	     	bat 'npm test'	    	
+	     	bat '''
+        	cd C:\\Users\\mau99\\.jenkins\\workspace\\TestingKelowna\\Kelownatrails
+        	npm test   	
+        	'''    	
             }
         }
 
