@@ -153,6 +153,7 @@ function AddGroupMember(lastName, firstName) {
 function RemoveGroupMember() {
 
 	throw "ERROR! You must work in this function before to send to Staging Environment!";
+	
 
 }
 
