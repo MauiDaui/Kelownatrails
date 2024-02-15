@@ -16,7 +16,7 @@ pipeline{
             	echo 'This is testing'
 	     	bat '''
         	cd C:\\Users\\mau99\\.jenkins\\workspace\\TestingKelowna\\Kelownatrails
-        	npm test
+        	npx mocha --no-timeouts
         	'''
 	    	
             }
