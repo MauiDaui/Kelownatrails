@@ -63,7 +63,7 @@ describe("TEST KELOWNA TRAILS APP",function(){
         let name = await driver.findElement(By.xpath("/html/body/h3")).getText().then(function(value){
             return value;
         });
-        name.should.equal("Student name / email");
+        name.should.equal("Mauricio Castillo / mauriciocastillocastro@hotmail.com");
           //assert.strictEqual(name,"Student2 name / email"););
         
     });
