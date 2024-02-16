@@ -4,17 +4,14 @@
 const { assert } = require("chai");
 const {Builder, By, Key, WebElement, util,Select} = require ("selenium-webdriver");
 var should = require("chai").should();
-const chrome = require('selenium-webdriver/chrome');
-const path = require('chromedriver').path;
+
 
 
 
 
 describe("TEST KELOWNA TRAILS APP",function(){
 
-    let service = new chrome.ServiceBuilder(path).build();
-    chrome.setDefaultService(service);
-    
+
     var driver =  new Builder().forBrowser("chrome").build();
     driver.get("https://devops-proj-testing-4ee4d.web.app/");
     let selectElement = driver.findElement(By.id("members"));

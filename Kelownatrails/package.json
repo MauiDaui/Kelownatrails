@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.4.1",
+    "chromedriver": "^121.0.1",
     "jest": "^29.7.0",
     "mocha": "^10.3.0",
     "selenium-webdriver": "^4.17.0"
