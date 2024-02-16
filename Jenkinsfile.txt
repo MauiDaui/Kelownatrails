@@ -15,7 +15,7 @@ pipeline{
             steps{
             	echo 'This is testing'
 	     	bat '''
-        	cd C:\\Users\\mau99\\.jenkins\\workspace\\TestingKelowna\\Kelownatrails
+        	cd /var/lib/jenkins/workspace/KelownaTest/package.json/Kelownatrails
         	npm test   	
         	'''    	
             }
