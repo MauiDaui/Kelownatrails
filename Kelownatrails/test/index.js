@@ -14,7 +14,7 @@ var should = require("chai").should();
 
 describe("TEST KELOWNA TRAILS APP",function(){
 
-    let service = new chrome.ServiceBuilder('/usr/bin/chromedriver').build(); 
+    let service = new chrome.ServiceBuilder('/usr/bin/chromedriver'); 
     let options = new chrome.Options();
     options.addArguments('--headless'); // Ejecuta Chrome en modo headless
     options.addArguments('--no-sandbox'); 
