@@ -14,7 +14,10 @@ pipeline{
          stage('Testing'){
             steps{
             	echo 'This is testing'
-	     	sh 'npm test'    	
+	     	sh '''
+        	cd /var/lib/jenkins/workspace/KelownaTest/package.json/Kelownatrails
+        	npm test   	
+        	'''    	 	
             }
         }
 
