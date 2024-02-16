@@ -3,7 +3,10 @@
 //import { should,assert } from 'chai';
 const { assert } = require("chai");
 const {Builder, By, Key, WebElement, util,Select} = require ("selenium-webdriver");
+const chrome = require('selenium-webdriver/chrome');
 var should = require("chai").should();
+
+
 
 
 
@@ -11,8 +14,11 @@ var should = require("chai").should();
 
 describe("TEST KELOWNA TRAILS APP",function(){
 
-
-    var driver =  new Builder().forBrowser("chrome").build();
+    let service = new chrome.ServiceBuilder('/usr/bin/chromedriver').build(); 
+    let options = new chrome.Options();
+    options.addArguments('--headless'); // Ejecuta Chrome en modo headless
+    options.addArguments('--no-sandbox'); 
+    var driver =  new Builder().forBrowser("chrome").setChromeOptions(options).setChromeService(service).build();
     driver.get("https://devops-proj-testing-4ee4d.web.app/");
     let selectElement = driver.findElement(By.id("members"));
     const select = new Select(selectElement);
