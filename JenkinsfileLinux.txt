@@ -8,6 +8,8 @@ pipeline{
         stage('Building'){
             steps{
             echo 'Building'
+ 	    sh 'chmod +x /var/lib/jenkins/workspace/KelownaTest/Kelownatrails/node_modules/.bin/mocha'
+
             }
         } 
 
