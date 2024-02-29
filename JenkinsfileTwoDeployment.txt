@@ -10,7 +10,6 @@ pipeline{
             sh 'npm install -g firebase-tools'
             }
         }
-    stages{
         stage('Staging'){
             steps{
             sh 'firebase deploy -P staging-replica-c0b2f --token "$FIREBASE_DEPLOY_TOKEN"'
